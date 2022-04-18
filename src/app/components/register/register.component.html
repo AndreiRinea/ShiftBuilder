@@ -1,1 +1,12 @@
-<p>register worx!</p>
+<form [formGroup]="registerForm">
+
+    <div>
+        <label>Username</label>
+        <input type="text" formControlName="username" placeholder="JohnnyBee" />
+    </div>
+
+
+    <div>
+        <button type="submit" (click)="register()">Register</button>
+    </div>
+</form>
